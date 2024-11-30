@@ -1,0 +1,129 @@
+/* General Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f9;
+}
+
+.notes-app {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  height: 600px;
+}
+
+/* Sidebar Styling */
+.notes-sidebar {
+  width: 300px;
+  background: #1e1e2f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.notes-sidebar button {
+  background: #009578;
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.notes-sidebar button:hover {
+  background: #00af8c;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notes-list-item {
+  background: #292945;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notes-list-item:hover {
+  background: #38385b;
+}
+
+.notes-list-item.selected {
+  background: #57577d;
+}
+
+/* Delete Icon */
+.notes-list-item .delete-icon {
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.notes-list-item .delete-icon:hover {
+  color: #ff4c4c;
+}
+
+/* Note Preview */
+.notes-preview {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-preview input {
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+}
+
+.notes-preview textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+  color: #333;
+  line-height: 1.6;
+}
+
+.notes-list-item .note-updated {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.notes-preview .last-updated {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: right;
+}
