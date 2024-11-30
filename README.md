@@ -44,11 +44,10 @@ cd notes-app
 ---
 ## Usage 🛠️
 
-1. **Add a Note**: Click the **Add Note** button to create a new note with a default title and body.
+1. **Add a Note**: Click the **Add Note** button to create a new note.
 2. **Edit a Note**: Select a note from the sidebar and modify its title or body in the preview pane. Changes are automatically saved when you click away or lose focus.
 3. **Delete a Note**:
-   - Double-click a note in the sidebar or click the delete icon 🗑️.
-   - Confirm the deletion in the prompt.
+   - click the delete icon 🗑️.
 4. **View Last Updated Time**: Check the "Last Updated" timestamp in the sidebar or the note preview to see the most recent modification time.
 
 ---
